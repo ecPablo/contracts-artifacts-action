@@ -12,7 +12,6 @@ runs:
       shell: bash
       run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
     - name: Checkout sources
-      shell: bash
       uses: actions/checkout@v3
       with:
         submodules: 'recursive'
